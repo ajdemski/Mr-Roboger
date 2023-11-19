@@ -45,6 +45,14 @@ Copyright (c) _November 19th, 2023_ Aaron Demski
 ## Tests:
 * Test 1: "An empty array called 'result' will store the message for each number."
 * Code:
->function generateRobogersAnswer(num) {
+>function generateAnswer(number) {
   const result = [];
  }
+Expected Output: null
+
+ * Test 2: "It will count from 0 to the 'number' that the user inputed"
+* Code: 
+>for (let i = 0; i <= number; i++) {
+  let message = "";
+ }
+Expected Output: ["number"]

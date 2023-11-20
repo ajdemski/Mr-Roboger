@@ -1,7 +1,7 @@
 // Business Logic
-function generateAnswer(number) {
+function generateRoboger(number) {
   const result = [];
-  for (let i = 0; i < - number; i++) {
+  for (let i = 0; i <= number; i++) {
     let message = "";
     if (i.toString().includes("1")) {
       message += "won't you be my neighbor?";
@@ -23,5 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const roboger = document.getElementById("roboger");
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-  })
-})
+    const number = parseInt(document.getElementById("input").value);
+    const result = generateRoboger(number);
+    roboger.textContent = result.join(" ");
+  });
+});

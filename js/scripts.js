@@ -1,10 +1,16 @@
 // Business Logic
 function generateAnswer(number) {
   const result = [];
-  for (let i = 0; i <- number; i++) {
+    for (let i = 0; i <- number; i++) {
     let message = "";
+    if (i.toString().includes("1")) {
+      message += "boop";
+    } else {
+      message = i.toString();
+    }
+    result.push(message);
   }
-  return result;
+
 }
 
 

@@ -56,3 +56,14 @@ Expected Output: null
   let message = "";
  }
 Expected Output: ["number"]
+
+* Test 3: "It will check if the current number ('i') contains a 1"
+* Code:
+>for (let i = 0; i <= num; i++) {
+  let message = "";
+  if (i.toString().includes("1")) {
+    message += "boop";
+  }
+}
+
+Expected Output: "0, boop, 2, 3, 4, 5"

@@ -16,13 +16,13 @@ _A Code Review Project from Aaron Demski, In this repository you'll find index.h
 ## Setup/Installation Requirements
 
 * _Clone my repository to your desktop using VsCode._
-* _In the terminal clone the repository with the command: git clone https://github.com/ajdemski/_
+* In the terminal clone the repository with the command: git clone https://github.com/ajdemski/Mr-Roboger
 * _Navigte to the top level of the directory._
 * _Open index.html in the file you cloned._
 
 ## _Link To Site_
 
-* _https://github.com_
+* https://ajdemski.github.io/Mr-Roboger/
 
 ## Known Bugs
 
@@ -59,24 +59,22 @@ Expected Output: [0, 1, 2, 3, 4, 5]
 
 * Test 3: "It will check if the current number ('i') contains a 1"
 * Code:
->for (let i = 0; i <= num; i++) {
-  let message = "";
-  if (i.toString().includes("1")) {
-    message += "won't you be my neighbor?";
-  }
+>else if (i.toString().includes("1")) {
+  message += "beep";
 }
-Expected Output: ["0, won't you be my neighbor?, 2, 3, 4, 5"]
+Expected Output: ["0, beep, 2, 3, 4, 5"]
 
 * Test 4: "It will check if the current number ('i') contains a 2"
 * Code:
 >if (i.toString().includes("2")) {
   message += "boop";
 }
-Expected Output: ["0, won't you be my neighbor?, boop, 3, 4, 5"]
+Expected Output: ["0, beep, boop, 3, 4, 5"]
 
 * Test 5: "It will check if the current number ('i') contains a 3"
 * Code:
 >else if (i.toString().includes("3")) {
-  message += "beep";
+  message += "won't you be my neighbor?";
 }
-Expected Output: ["0, won't you be my neighbor?, boop, beep, 4, 5"]
+Expected Output: ["0, beep, boop, won't you be my neighbor?, 4, 5"]
+

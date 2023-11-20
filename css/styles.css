@@ -31,3 +31,14 @@ button {
 button:hover {
   background-color: #3367d6;
 }
+
+h2 {
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+#roboger {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+}

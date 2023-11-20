@@ -48,28 +48,35 @@ Copyright (c) _November 19th, 2023_ Aaron Demski
 >function generateAnswer(number) {
   const result = [];
  }
-Expected Output: null
+Expected Output: []
 
  * Test 2: "It will count from 0 to the 'number' that the user inputed"
 * Code: 
 >for (let i = 0; i <= number; i++) {
   let message = "";
  }
-Expected Output: ["number"]
+Expected Output: [0, 1, 2, 3, 4, 5]
 
 * Test 3: "It will check if the current number ('i') contains a 1"
 * Code:
 >for (let i = 0; i <= num; i++) {
   let message = "";
   if (i.toString().includes("1")) {
-    message += "boop";
+    message += "won't you be my neighbor?";
   }
 }
-Expected Output: "0, boop, 2, 3, 4, 5"
+Expected Output: ["0, won't you be my neighbor?, 2, 3, 4, 5"]
 
 * Test 4: "It will check if the current number ('i') contains a 2"
 * Code:
 >if (i.toString().includes("2")) {
+  message += "boop";
+}
+Expected Output: ["0, won't you be my neighbor?, boop, 3, 4, 5"]
+
+* Test 5: "It will check if the current number ('i') contains a 3"
+* Code:
+>else if (i.toString().includes("3")) {
   message += "beep";
 }
-Expected Output: "0, 1, beep, 3, 4, 5"
+Expected Output: ["0, won't you be my neighbor?, boop, beep, 4, 5"]

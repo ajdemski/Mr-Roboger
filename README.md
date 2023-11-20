@@ -65,5 +65,11 @@ Expected Output: ["number"]
     message += "boop";
   }
 }
-
 Expected Output: "0, boop, 2, 3, 4, 5"
+
+* Test 4: "It will check if the current number ('i') contains a 2"
+* Code:
+>if (i.toString().includes("2")) {
+  message += "beep";
+}
+Expected Output: "0, 1, beep, 3, 4, 5"

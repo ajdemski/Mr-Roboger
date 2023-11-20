@@ -18,3 +18,10 @@ function generateAnswer(number) {
 }
 
 // UI Logic
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("numberCounter");
+  const roboger = document.getElementById("roboger");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+  })
+})

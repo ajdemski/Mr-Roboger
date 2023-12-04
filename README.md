@@ -43,38 +43,17 @@ SOFTWARE.
 Copyright (c) _November 19th, 2023_ Aaron Demski
 
 ## Tests:
-* Test 1: "An empty array called 'result' will store the message for each number."
-* Code:
->function generateAnswer(number) {
-  const result = [];
- }
-Expected Output: []
 
- * Test 2: "It will count from 0 to the 'number' that the user inputed"
-* Code: 
->for (let i = 0; i <= number; i++) {
-  let message = "";
- }
-Expected Output: [0, 1, 2, 3, 4, 5]
+## Test 1
+Describe: generateAnswer()
+Test: "An empty array called 'result' will store the message for each number."
+Code:
+> const result = generateAnswer(5);
+Expect: []
 
-* Test 3: "It will check if the current number ('i') contains a 1"
-* Code:
->else if (i.toString().includes("1")) {
-  message += "beep";
-}
-Expected Output: ["0, beep, 2, 3, 4, 5"]
-
-* Test 4: "It will check if the current number ('i') contains a 2"
-* Code:
->if (i.toString().includes("2")) {
-  message += "boop";
-}
-Expected Output: ["0, beep, boop, 3, 4, 5"]
-
-* Test 5: "It will check if the current number ('i') contains a 3"
-* Code:
->else if (i.toString().includes("3")) {
-  message += "won't you be my neighbor?";
-}
-Expected Output: ["0, beep, boop, won't you be my neighbor?, 4, 5"]
-
+## Test 2
+Describe: generateAnswer()
+Test: "It will count from 0 to the 'number' that the user inputed"
+Code:
+> const result = generateAnswer(5);
+Expect: [0, 1, 2, 3, 4, 5]

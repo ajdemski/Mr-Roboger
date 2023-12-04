@@ -44,27 +44,33 @@ Copyright (c) _November 19th, 2023_ Aaron Demski
 
 ## Tests:
 
+```
 * Describe: generateRoboger(number)
 * Test 1: "An empty array called 'result' will store the message for each number."
 * Code: generateRoboger(number)
 Expected Output: []
-
+```
+```
 * Describe: generateRoboger(number)
 * Test 2: "It will count from 0 to the 'number' that the user inputed"
 * Code: generateRoboger(5)
 Expected Output: [0, 1, 2, 3, 4, 5]
-
+```
+```
 * Describe: generateRoboger(number)
 * Test 3: "It will check if the current number ('i') contains a 1"
 * Code: generateRoboger(5)
 Expected Output: ["0, beep, 2, 3, 4, 5"]
-
+```
+```
 * Describe: generateRoboger(number)
 * Test 4: "It will check if the current number ('i') contains a 2"
 * Code: generateRoboger(5)
 Expected Output: ["0, beep, boop, 3, 4, 5"]
-
+```
+```
 * Describe: generateRoboger(number)
 * Test 5: "It will check if the current number ('i') contains a 3"
 * Code: generateRoboger(5)
 Expected Output: ["0, beep, boop, won't you be my neighbor?, 4, 5"]
+```
